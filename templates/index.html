@@ -4,7 +4,7 @@
   <div class="container">
     <h1>upload file</h1>
     <hr>
-    <form class="form-inlne" action="index.html" method="post">
+    <form class="form-inlne" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <input type="file" name="file" class="btn btn-default">
       </div>
