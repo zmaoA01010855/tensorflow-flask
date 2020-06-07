@@ -22,6 +22,6 @@ def get_prediction(image_path):
     result = json.loads(response.text)
     prediction = np.squeeze(result['predictions'][0])
     class_name = CLASSES[int(prediction > 0.5)]
+    return class_name
 
-
-get_prediction('dog.jpg')
+# get_prediction('dog.jpg')
